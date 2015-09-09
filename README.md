@@ -67,7 +67,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the 
 [tags on this repository][tags]. 
 
-[tags]: https://github.com/ukhomeofficedigital/docker-selenium-standalone-server/tags
+[tags]: https://github.com/UKHomeOffice/docker-selenium-standalone-server/tags
 
 ## Authors
 
@@ -75,7 +75,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 See also the list of [contributors][contrib] who participated in this project.
 
-[contrib]: https://github.com/ukhomeofficedigital/docker-selenium-standalone-server/contributors
+[contrib]: https://github.com/UKHomeOffice/docker-selenium-standalone-server/contributors
 
 ## License
 
