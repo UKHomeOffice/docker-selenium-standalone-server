@@ -1,0 +1,87 @@
+# Docker: Selenium Server with Firefox and Google Chrome
+
+Docker container containing Selenium Server
+
+> Selenium automates browsers. That's it! What you do with that power is entirely up to you. 
+> Primarily, it is for automating web applications for testing purposes, but is certainly not 
+> limited to just that. Boring web-based administration tasks can (and should!) also be automated as
+> well.
+
+## Getting Started
+
+These instructions will cover usage information and for the docker container 
+
+### Prerequisities
+
+
+In order to run this container you'll need docker installed.
+
+* [Windows](https://docs.docker.com/windows/started)
+* [OS X](https://docs.docker.com/mac/started/)
+* [Linux](https://docs.docker.com/linux/started/)
+
+### Usage
+
+#### Container Parameters
+
+Parameters passed to the container will be passed onto Selenium Server.
+
+```shell
+docker run \
+       quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.0 \
+       -your --param=eters
+```
+
+Passing no parameters will start Selenium Server
+
+```shell
+docker run \
+       quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.0
+```
+
+You can also run arbitrary stuff
+
+```shell
+docker run \
+       quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.0 \
+       bash
+```
+
+### Exposes
+
+* `4444` Selenium Server 
+
+## Built With
+
+* Chrome Stable
+* Firefox
+* Selenium Chrome Driver 2.18
+* Selenium Server Standalone 2.47.1
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the 
+[tags on this repository][tags]. 
+
+[tags]: https://github.com/ukhomeofficedigital/docker-selenium-standalone-server/tags
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors][contrib] who participated in this project.
+
+[contrib]: https://github.com/ukhomeofficedigital/docker-selenium-standalone-server/contributors
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Lots of this code was stolen from the 
+  [official Selenium container](https://github.com/SeleniumHQ/docker-selenium).
