@@ -51,6 +51,10 @@ docker run \
 
 * `4444` Selenium Server 
 
+## Kubernetes
+
+For example Kubernetes files see [/kb8](/kb8)
+
 ## Built With
 
 * Chrome Stable

@@ -1,0 +1,44 @@
+--- 
+apiVersion: v1
+kind: ReplicationController
+metadata: 
+  labels: 
+    name: selenium-selenium
+    service: selenium
+    type: selenium
+  name: selenium-selenium-v0
+spec: 
+  replicas: 1
+  selector: 
+    name: selenium-selenium
+    service: selenium
+    type: selenium
+    version: v0
+  template: 
+    metadata: 
+      labels: 
+        name: selenium-selenium
+        service: selenium
+        type: selenium
+        version: v0
+    spec: 
+      containers: 
+        -
+          image: quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.0
+          imagePullPolicy: Always
+          name: selenium-selenium
+          livenessProbe:
+            httpGet:
+              path: /wd/hub/static/resource/hub.html
+              port: 4444
+            initialDelaySeconds: 60
+            timeoutSeconds: 1
+          resources:
+            limits:
+              memory: 1Gi
+          ports:
+            - 
+              containerPort: 4444
+              name: selenium
+              protocol: TCP
+      restartPolicy: Always
