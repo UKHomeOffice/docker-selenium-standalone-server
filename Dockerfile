@@ -3,7 +3,7 @@ FROM quay.io/ukhomeofficedigital/centos-base
 ENV SCREEN_WIDTH 1360
 ENV SCREEN_HEIGHT 1020
 ENV SCREEN_DEPTH 24
-ENV DISPLAY :99.0
+ENV DISPLAY :99
 
 RUN yum install -y java-1.8.0-openjdk \
                    sudo \
