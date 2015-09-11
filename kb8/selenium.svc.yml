@@ -11,6 +11,6 @@ spec:
     - 
       name: selenium
       port: 4444
-      targetPort: http
+      targetPort: selenium
   selector: 
     name: selenium-selenium
