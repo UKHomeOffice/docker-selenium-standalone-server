@@ -28,7 +28,7 @@ Parameters passed to the container will be passed onto Selenium Server.
 
 ```shell
 docker run \
-       quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.1 \
+       quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.2 \
        -your --param=eters
 ```
 
@@ -36,14 +36,14 @@ Passing no parameters will start Selenium Server
 
 ```shell
 docker run \
-       quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.1
+       quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.2
 ```
 
 You can also run arbitrary stuff
 
 ```shell
 docker run \
-       quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.1 \
+       quay.io/ukhomeofficedigital/selenium-standalone-server:v0.1.2 \
        bash
 ```
 

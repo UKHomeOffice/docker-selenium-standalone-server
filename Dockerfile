@@ -3,13 +3,14 @@ FROM quay.io/ukhomeofficedigital/centos-base
 ENV SCREEN_WIDTH 1360
 ENV SCREEN_HEIGHT 1020
 ENV SCREEN_DEPTH 24
-ENV DISPLAY :99
+ENV DISPLAY :99.0
 
 RUN yum install -y java-1.8.0-openjdk \
                    sudo \
                    unzip \
                    wget \
-                   Xvfb && \
+                   Xvfb \
+                   dbus && \
     yum clean all && \
     sed -i \
         's/\/dev\/urandom/\/dev\/.\/urandom/' \
@@ -21,8 +22,9 @@ RUN yum install -y java-1.8.0-openjdk \
          -O /opt/selenium/selenium-server-standalone.jar && \
     useradd seluser --shell /bin/bash --create-home && \
     echo 'ALL ALL = (ALL) NOPASSWD: ALL' >> /etc/sudoers && \
-    echo 'seluser:secret' | chpasswd
-
+    echo 'seluser:secret' | chpasswd && \
+    mkdir -p /var/lib/dbus/ && \
+    dbus-uuidgen > /var/lib/dbus/machine-id
 
 ENV CHROME_DRIVER_VERSION 2.18
 
