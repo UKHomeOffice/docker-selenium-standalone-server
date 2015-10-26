@@ -1,5 +1,7 @@
 # Docker: Selenium Server with Firefox and Google Chrome
 
+[![Build Status](https://travis-ci.org/UKHomeOffice/docker-selenium-standalone-server.svg?branch=master)](https://travis-ci.org/UKHomeOffice/docker-selenium-standalone-server)
+
 Docker container containing Selenium Server
 
 > Selenium automates browsers. That's it! What you do with that power is entirely up to you. 
