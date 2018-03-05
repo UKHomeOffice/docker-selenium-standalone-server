@@ -1,0 +1,24 @@
+pipeline:
+  build:
+    environment:
+      - DOCKER_USERNAME=ukhomeofficedigital+selenium_standalone_server
+    image: ukhomeoffice/drone-docker
+    registry: quay.io
+    repo: quay.io/ukhomeofficedigital/selenium-standalone-server
+    secrets: [ docker_password ]
+    tags:
+      - ${DRONE_COMMIT_SHA}
+    when:
+      event: push
+
+  build_tag:
+    environment:
+      - DOCKER_USERNAME=ukhomeofficedigital+selenium_standalone_server
+    image: ukhomeoffice/drone-docker
+    registry: quay.io
+    repo: quay.io/ukhomeofficedigital/selenium-standalone-server
+    secrets: [ docker_password ]
+    tags:
+      - ${DRONE_TAG}
+    when:
+      event: tag
