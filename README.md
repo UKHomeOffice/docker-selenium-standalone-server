@@ -1,17 +1,20 @@
-# Docker: Selenium Server with Firefox and Google Chrome
+# docker-selenium-standalone-server
 
 [![Build Status](https://travis-ci.org/UKHomeOffice/docker-selenium-standalone-server.svg?branch=master)](https://travis-ci.org/UKHomeOffice/docker-selenium-standalone-server)
 
+
+[![Build Status](https://drone.acp.homeoffice.gov.uk/api/badges/UKHomeOffice/docker-selenium-standalone-server/status.svg)](https://drone.acp.homeoffice.gov.uk/UKHomeOffice/docker-selenium-standalone-server)
+
 Docker container containing Selenium Server
 
-> Selenium automates browsers. That's it! What you do with that power is entirely up to you. 
-> Primarily, it is for automating web applications for testing purposes, but is certainly not 
+> Selenium automates browsers. That's it! What you do with that power is entirely up to you.
+> Primarily, it is for automating web applications for testing purposes, but is certainly not
 > limited to just that. Boring web-based administration tasks can (and should!) also be automated as
 > well.
 
 ## Getting Started
 
-These instructions will cover usage information and for the docker container 
+These instructions will cover usage information and for the docker container
 
 ### Prerequisities
 
@@ -51,7 +54,7 @@ docker run \
 
 ### Exposes
 
-* `4444` Selenium Server 
+* `4444` Selenium Server
 
 ## Kubernetes
 
@@ -61,8 +64,8 @@ For example Kubernetes files see [/kb8](/kb8)
 
 * Chrome Stable
 * Firefox
-* Selenium Chrome Driver 2.18
-* Selenium Server Standalone 2.47.1
+* Selenium Chrome Driver
+* Selenium Server Standalone
 
 ## Contributing
 
@@ -70,8 +73,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the 
-[tags on this repository][tags]. 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the
+[tags on this repository][tags].
 
 [tags]: https://github.com/UKHomeOffice/docker-selenium-standalone-server/tags
 
@@ -89,5 +92,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Lots of this code was stolen from the 
+* Lots of this code was stolen from the
   [official Selenium container](https://github.com/SeleniumHQ/docker-selenium).
