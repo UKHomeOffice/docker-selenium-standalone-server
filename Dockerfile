@@ -5,8 +5,8 @@ ENV SCREEN_WIDTH=1360 \
     SCREEN_DEPTH=24 \
     DISPLAY=:99.0
 
-ENV SELENIUM_DOWNLOAD_URL=https://selenium-release.storage.googleapis.com/3.10/selenium-server-standalone-3.10.0.jar \
-    CHROME_DRIVER_VERSION=2.33
+ENV SELENIUM_DOWNLOAD_URL=https://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar \
+    CHROME_DRIVER_VERSION=2.46
 
 RUN yum install -y sudo unzip wget Xvfb dbus && \
     yum clean all && \
